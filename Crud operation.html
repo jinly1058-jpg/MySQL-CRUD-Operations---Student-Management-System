@@ -1,0 +1,18 @@
+USE collegedb1;
+CREATE TABLE Stud(StudentID INT PRIMARY KEY,StudentName VARCHAR(50),Department VARCHAR(30),Age INT,City VARCHAR(30));
+INSERT INTO Stud(StudentID,StudentName,Department,Age,City)
+VALUES(101,'Anbu','BCA',18,'Chennai');
+INSERT INTO Stud(StudentID,StudentName,Department,Age,City)
+VALUES(102,'Jinly','BE',19,'Madurai');
+INSERT INTO Stud(StudentID,StudentName,Department,Age,City)
+VALUES(103,'Jesly','BSC',18,'Coimbatore');
+SELECT*FROM Stud;
+SELECT StudentName,Department FROM Stud;
+SELECT*FROM Stud WHERE City='Chennai';
+UPDATE Stud SET Age=20 WHERE StudentID=102;
+UPDATE Stud SET City='Trichy' WHERE StudentID=103;
+SELECT*FROM Stud;
+DELETE FROM Stud WHERE StudentId=101;
+SELECT*FROM Stud;
+DROP TABLE Stud;
+   
